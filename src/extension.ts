@@ -8,7 +8,7 @@ function formatBinDecHex(hoveredWord: string, v: number, mask: number): vscode.H
   const strs = [bin, dec, hex];
   const outStrs = [];
   for (let i = 0; i < 3; i++) {
-    if (mask & (1 << i)) {
+    if ((mask & (1 << i)) !== 0) {
       outStrs.push(strs[i]);
     }
   }
@@ -30,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
       if (hexMatch) {
         const x = parseInt(hexMatch[1], 16);
         if (!isNaN(x)) {
-          return formatBinDecHex(hoveredWord, x, 0b110);
+          return formatBinDecHex(hoveredWord, x, 0b011);
         }
       }
 
@@ -38,7 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
       if (binaryMatch) {
         const x = parseInt(binaryMatch[1], 2);
         if (!isNaN(x)) {
-          return formatBinDecHex(hoveredWord, x, 0b011);
+          return formatBinDecHex(hoveredWord, x, 0b110);
         }
       }
 
