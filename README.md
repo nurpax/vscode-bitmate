@@ -1,14 +1,17 @@
 # vscode-bitmate
 
-Bitmate displays the decimal/hex/binary value of literal number values in source code.  The supported hex/binary formats is: `$abcd` (hex) and `%10101010` (binary).
+Bitmate displays the decimal/hex/binary value of literal number values in source code.  The supported hex/binary formats are:
+
+- `$abcd` (hex)
+- `%10101010` (binary)
 
 ## Features
 
-Quickly know the decimal value of a hexadecimal string
+Display the binary/decimal/hex value of a binary/decimal/hexadecimal string in source code.
 
 ![](images/bitmate-anim.gif)
 
-> Hoverhex is configured to work on any document
+Bitmate decimal hover is turned on by default for all document types.  Note: this most likely needs to be made configurable.
 
 ## Contributing/Bug reporting
 
