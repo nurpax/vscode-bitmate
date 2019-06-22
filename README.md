@@ -1,28 +1,23 @@
-# vscode-hoverhex ![Build Status](https://travis-ci.org/thegtproject/vscode-hoverhex.svg?branch=master)
+# vscode-bitmate
 
-Hoverhex displays the decimal value of any valid hex number that the mouse is hovering.
+Bitmate displays the decimal/hex/binary value of literal number values in source code.  The supported hex/binary formats is: `$abcd` (hex) and `%10101010` (binary).
 
 ## Features
 
 Quickly know the decimal value of a hexadecimal string
 
-
-![](images/hoverhex.gif)
-
+![](images/bitmate-anim.gif)
 
 > Hoverhex is configured to work on any document
 
-### 0.0.2 - 2018.05.09
+## Contributing/Bug reporting
 
-Fixed a typo
-Added travis build badge
+Please file bug reports via https://github.com/nurpax/vscode-bitmate
 
-### 0.0.1 - 2018.05.08
+### 0.0.1 - 2019-06-22
 
 Initial release
 
+## Credits
 
-
-**Enjoy!**
-
-https://github.com/thegtproject/vscode-hoverhex
+Originally forked from https://github.com/thegtproject/vscode-hoverhex

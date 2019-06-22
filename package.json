@@ -1,17 +1,14 @@
 {
-    "name": "hoverhex",
-    "displayName": "hoverhex",
-    "description": "Provide quick decimal conversion of hexadecimal strings",
-    "version": "0.0.2",
-    "publisher": "thegtproject",
+    "name": "bitmate",
+    "displayName": "Bitmate",
+    "description": "Convert between decimal/binary/hex with mouse hover",
+    "version": "0.0.1",
+    "publisher": "nurpax",
     "license": "MIT",
-    "keywords": [
-        "hex",
-        "hover"
-    ],
+    "keywords": ["assembly", "hex", "binary", "hover", "c64"],
     "repository": {
         "type": "git",
-        "url": "https://github.com/thegtproject/vscode-hoverhex.git"
+        "url": "https://github.com/nurpax/vscode-bitmate.git"
     },
     "engines": {
         "vscode": "^1.23.0"
@@ -31,10 +28,8 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.43",
-        "tslint": "^5.10.0",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6"
+        "typescript": "^2.8.3",
+        "vscode": "^1.1.21"
     }
 }
